@@ -15,7 +15,7 @@ typedef struct Printer {
   const Printer_methods* methods;
 } Printer;
 
-extern const Printer_methods stream_printer_info;
+extern const Printer_methods stream_printer_methods;
 
 static inline int printer_print(Printer printer, const char* string) {
   return printer.methods->print(printer.data, string);

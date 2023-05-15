@@ -6,8 +6,8 @@ typedef struct Comparator_methods {
 } Comparator_methods;
 
 typedef struct Comparator {
-  void* methods;
-  const Comparator_methods* info;
+  void* data;
+  const Comparator_methods* methods;
 } Comparator;
 
 extern const Comparator char_comparator;
@@ -33,7 +33,7 @@ extern const Comparator string_comparator;
 extern const Comparator wstring_comparator;
 
 static inline int comparator_compare(Comparator comparator, const void* x, const void* y) {
-  return comparator.info->compare(comparator.methods, x, y);
+  return comparator.methods->compare(comparator.data, x, y);
 }
 
 #endif

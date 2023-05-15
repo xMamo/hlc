@@ -17,8 +17,8 @@ static const Comparator_methods _char_comarator_methods = {
 };
 
 const Comparator char_comparator = {
-  .methods = NULL,
-  .info = &_char_comarator_methods,
+  .data = NULL,
+  .methods = &_char_comarator_methods,
 };
 
 static int _wchar_compare(const void* comparator, const void* _x, const void* _y) {
@@ -33,8 +33,8 @@ static const Comparator_methods _wchar_comarator_methods = {
 };
 
 const Comparator wchar_comparator = {
-  .methods = NULL,
-  .info = &_wchar_comarator_methods,
+  .data = NULL,
+  .methods = &_wchar_comarator_methods,
 };
 
 static int _schar_compare(const void* comparator, const void* _x, const void* _y) {
@@ -49,8 +49,8 @@ static const Comparator_methods _schar_comarator_methods = {
 };
 
 const Comparator schar_comparator = {
-  .methods = NULL,
-  .info = &_schar_comarator_methods,
+  .data = NULL,
+  .methods = &_schar_comarator_methods,
 };
 
 static int _short_compare(const void* comparator, const void* _x, const void* _y) {
@@ -65,8 +65,8 @@ static const Comparator_methods _short_comarator_methods = {
 };
 
 const Comparator short_comparator = {
-  .methods = NULL,
-  .info = &_short_comarator_methods,
+  .data = NULL,
+  .methods = &_short_comarator_methods,
 };
 
 static int _int_compare(const void* comparator, const void* _x, const void* _y) {
@@ -81,8 +81,8 @@ static const Comparator_methods _int_comarator_methods = {
 };
 
 const Comparator int_comparator = {
-  .methods = NULL,
-  .info = &_int_comarator_methods,
+  .data = NULL,
+  .methods = &_int_comarator_methods,
 };
 
 static int _long_compare(const void* comparator, const void* _x, const void* _y) {
@@ -97,8 +97,8 @@ static const Comparator_methods _long_comarator_methods = {
 };
 
 const Comparator long_comparator = {
-  .methods = NULL,
-  .info = &_long_comarator_methods,
+  .data = NULL,
+  .methods = &_long_comarator_methods,
 };
 
 static int _llong_compare(const void* comparator, const void* _x, const void* _y) {
@@ -113,8 +113,8 @@ static const Comparator_methods _llong_comarator_methods = {
 };
 
 const Comparator llong_comparator = {
-  .methods = NULL,
-  .info = &_llong_comarator_methods,
+  .data = NULL,
+  .methods = &_llong_comarator_methods,
 };
 
 static int _uchar_compare(const void* comparator, const void* _x, const void* _y) {
@@ -129,8 +129,8 @@ static const Comparator_methods _uchar_comarator_methods = {
 };
 
 const Comparator uchar_comparator = {
-  .methods = NULL,
-  .info = &_uchar_comarator_methods,
+  .data = NULL,
+  .methods = &_uchar_comarator_methods,
 };
 
 static int _ushort_compare(const void* comparator, const void* _x, const void* _y) {
@@ -145,8 +145,8 @@ static const Comparator_methods _ushort_comarator_methods = {
 };
 
 const Comparator ushort_comparator = {
-  .methods = NULL,
-  .info = &_ushort_comarator_methods,
+  .data = NULL,
+  .methods = &_ushort_comarator_methods,
 };
 
 static int _uint_compare(const void* comparator, const void* _x, const void* _y) {
@@ -161,8 +161,8 @@ static const Comparator_methods _uint_comarator_methods = {
 };
 
 const Comparator uint_comparator = {
-  .methods = NULL,
-  .info = &_uint_comarator_methods,
+  .data = NULL,
+  .methods = &_uint_comarator_methods,
 };
 
 static int _ulong_compare(const void* comparator, const void* _x, const void* _y) {
@@ -177,8 +177,8 @@ static const Comparator_methods _ulong_comarator_methods = {
 };
 
 const Comparator ulong_comparator = {
-  .methods = NULL,
-  .info = &_ulong_comarator_methods,
+  .data = NULL,
+  .methods = &_ulong_comarator_methods,
 };
 
 static int _ullong_compare(const void* comparator, const void* _x, const void* _y) {
@@ -193,8 +193,8 @@ static const Comparator_methods _ullong_comarator_methods = {
 };
 
 const Comparator ullong_comparator = {
-  .methods = NULL,
-  .info = &_ullong_comarator_methods,
+  .data = NULL,
+  .methods = &_ullong_comarator_methods,
 };
 
 static int _float_compare(const void* comparator, const void* _x, const void* _y) {
@@ -232,8 +232,8 @@ static const Comparator_methods _float_comparator_methods = {
 };
 
 const Comparator float_comparator = {
-  .methods = NULL,
-  .info = &_float_comparator_methods,
+  .data = NULL,
+  .methods = &_float_comparator_methods,
 };
 
 static int _double_compare(const void* comparator, const void* _x, const void* _y) {
@@ -271,8 +271,8 @@ static const Comparator_methods _double_comparator_methods = {
 };
 
 const Comparator double_comparator = {
-  .methods = NULL,
-  .info = &_double_comparator_methods,
+  .data = NULL,
+  .methods = &_double_comparator_methods,
 };
 
 static int _ldouble_compare(const void* comparator, const void* _x, const void* _y) {
@@ -310,8 +310,8 @@ static const Comparator_methods _ldouble_comparator_methods = {
 };
 
 const Comparator ldouble_comparator = {
-  .methods = NULL,
-  .info = &_ldouble_comparator_methods,
+  .data = NULL,
+  .methods = &_ldouble_comparator_methods,
 };
 
 static int _string_compare(const void* comparator, const void* _x, const void* _y) {
@@ -326,8 +326,8 @@ static const Comparator_methods _string_comparator_methods = {
 };
 
 const Comparator string_comparator = {
-  .methods = NULL,
-  .info = &_string_comparator_methods,
+  .data = NULL,
+  .methods = &_string_comparator_methods,
 };
 
 static int _wstring_compare(const void* comparator, const void* _x, const void* _y) {
@@ -342,6 +342,6 @@ static const Comparator_methods _wstring_comparator_methods = {
 };
 
 const Comparator wstring_comparator = {
-  .methods = NULL,
-  .info = &_wstring_comparator_methods,
+  .data = NULL,
+  .methods = &_wstring_comparator_methods,
 };

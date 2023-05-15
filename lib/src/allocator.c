@@ -25,6 +25,6 @@ static const Allocator_methods _allocator_methods = {
 };
 
 const Allocator heap_allocator = {
-  .methods = NULL,
-  .info = &_allocator_methods,
+  .data = NULL,
+  .methods = &_allocator_methods,
 };

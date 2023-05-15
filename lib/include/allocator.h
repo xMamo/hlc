@@ -10,22 +10,22 @@ typedef struct Allocator_methods {
 } Allocator_methods;
 
 typedef struct Allocator {
-  void* methods;
-  const Allocator_methods* info;
+  void* data;
+  const Allocator_methods* methods;
 } Allocator;
 
 extern const Allocator heap_allocator;
 
 static inline void* allocator_allocate(Allocator allocator, size_t size) {
-  return allocator.info->allocate(allocator.methods, size);
+  return allocator.methods->allocate(allocator.data, size);
 }
 
 static inline void* allocator_reallocate(Allocator allocator, void* pointer, size_t size) {
-  return allocator.info->reallocate(allocator.methods, pointer, size);
+  return allocator.methods->reallocate(allocator.data, pointer, size);
 }
 
 static inline void allocator_free(Allocator allocator, void* pointer) {
-  allocator.info->free(allocator.methods, pointer);
+  allocator.methods->free(allocator.data, pointer);
 }
 
 #endif

@@ -19,7 +19,7 @@ static int _stream_vprintf(void* stream, const char* format, va_list ap) {
   return stream_vprintf(stream, format, ap);
 }
 
-const Printer_methods stream_printer_info = {
+const Printer_methods stream_printer_methods = {
   .print = _stream_print,
   .printf = _stream_printf,
   .vprintf = _stream_vprintf,
